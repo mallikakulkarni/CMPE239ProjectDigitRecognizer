@@ -4,6 +4,7 @@ from flask import jsonify
 from flask import render_template
 
 import re
+# from ImageIn import ImageConv
 
 app = Flask(__name__)
 
@@ -21,7 +22,7 @@ def recognize_image():
     # eg. confusion_matrix = recognize_image_for_digits("/tmp/digit_image.png")
     # confusion_matrix should be a dict like -
     # {1 : 0.99, 2 : 0.8, 3 : 0.6}
-
+    # ImageConv("/tmp/digit_image.png");
 
     return {1 : 0.99, 2 : 0.8, 3 : 0.6}
 
